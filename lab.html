@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="lab.css">
+    <title>Lab 1</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="btn" id="boton"><i class="material-icons right">desktop_windows</i> Cambiar fondo de pantalla</a>
+    </header>
+
+    <main>
+        <div class="col l6 m6 s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title center">Comentarios</span>
+                <form id="todo-form">
+                  <div class="input-field">
+                    <input type="text" id="todo" placeholder="Agrega un Comentario">
+                  </div>
+                </form>
+                <ul class="collection todos">
+                </ul>
+              </div>
+            </div>
+        </div>
+        
+        <div class="contenedormapa" style="width: 100%;">
+            <div class="mapa" id="mapa" style="width: 50%; height: 370px; margin: auto;"></div>
+        </div>
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="lab.js"></script>
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCfKIiwcBrKDMg0pqjyTjD3O5O8cnZGaI&libraries=places&callback=initmap"></script>
+</body>
+</html>
